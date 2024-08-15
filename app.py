@@ -22,14 +22,14 @@ def get_llm_hf_inference(model_id=model_id, max_new_tokens=128, temperature=0.1)
         repo_id=model_id,
         max_new_tokens=max_new_tokens,
         temperature=temperature,
-        token = os.getenv("HF_TOKEN")
+        token = os.getenv("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")
     )
     return llm
 
 # Configure the Streamlit app
 st.set_page_config(page_title="HuggingFace ChatBot", page_icon="🤗")
 st.title("Frodo Conversation Engine")
-st.markdown(f"*Frodo is a conversation engine that uses the HuggingFace transformers library to generate responses to your text input. It uses the {model_id}. by joe1606*")
+st.markdown(f"*Frodo is a conversation engine that uses the HuggingFace transformers library to generate responses to your text input. It uses the {model_id}. Experimental Project by joe1606*")
 
 # Initialize session state for avatars
 if "avatars" not in st.session_state:
