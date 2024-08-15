@@ -22,7 +22,7 @@ def get_llm_hf_inference(model_id=model_id, max_new_tokens=128, temperature=0.1)
         repo_id=model_id,
         max_new_tokens=max_new_tokens,
         temperature=temperature,
-        token = os.getenv("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")
+        token = os.getenv("huggingface-cli login")
     )
     return llm
 
